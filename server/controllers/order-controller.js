@@ -135,7 +135,7 @@ const sendEmail = async (to, subject, html) => {  // FIX: Changed `text` to `htm
           <div style="text-align: center; margin-top: 20px;">
             <p style="color: #666;">Your order is being processed and will be shipped soon.</p>
             <p style="font-size: 14px; color: #999;">If you have any questions, feel free to contact our support team.</p>
-            <a href="https://your-ecommerce-site.com/orders" 
+            <a href="https://foot-world-vozs-one.vercel.app/orderList" 
                style="display: inline-block; padding: 10px 20px; background-color: #27ae60; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 10px;">
                View Your Order
             </a>
