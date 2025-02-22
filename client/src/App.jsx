@@ -16,7 +16,7 @@ import { Footer } from "./components/Footer";
 import { ProductPage } from "./pages/ProductPage";
 import {Cart} from "./pages/Cart";
 import  {OrderConfirmation}  from "./pages/OrderConfirmation";
-import {Checkout} from "./pages/CheckOut";
+import {Checkout} from "./pages/Checkout";
 import {Orders} from "./pages/Order";
 
 
