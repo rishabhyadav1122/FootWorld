@@ -12,7 +12,7 @@ export const Cart = () => {
     const fetchCart = async () => {
       if (user) {
         try {
-          const response = await fetch(`http://localhost:5000/api/cart/getCart/${user._id}`, {
+          const response = await fetch(`https://foot-world.vercel.app/api/cart/getCart/${user._id}`, {
             method: "GET",
             headers: {
               "Content-Type": "application/json",

@@ -16,7 +16,7 @@ export const Register = () => {
     )
   
   
-    const URL = "http://localhost:5000/api/auth/register"
+    const URL = "https://foot-world.vercel.app/api/auth/register"
 
 
   

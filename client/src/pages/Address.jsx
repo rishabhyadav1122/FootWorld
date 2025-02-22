@@ -9,7 +9,7 @@ export const Address = () => {
 
   useEffect(() => {
     if (!user) return;
-    fetch(`http://localhost:5000/api/address/getAddress/${user._id}`)
+    fetch(`https://foot-world.vercel.app/api/address/getAddress/${user._id}`)
       .then((res) => res.json())
       .then((data) => {
         setAddresses(data.addresses || []);

@@ -18,7 +18,7 @@ export const CartProvider = ({ children }) => {
   // Function to fetch user's cart
   const fetchCart = async (userId) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/cart/getCart/${userId}`)
+      const response = await fetch(`https://foot-world.vercel.app/api/cart/getCart/${userId}`)
 
       const data = await response.json();
       setCart(data.items || []);
@@ -35,7 +35,7 @@ export const CartProvider = ({ children }) => {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/api/cart/addToCart", {
+      const response = await fetch("https://foot-world.vercel.app/api/cart/addToCart", {
         method: "POST",
         headers: { 
           "Content-Type": "application/json",

@@ -17,7 +17,7 @@ export const VerifyEmail = () => {
   const verifyEmailToken = async (token) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/auth/verifyEmail?token=${token}`,
+        `https://foot-world.vercel.app/api/auth/verifyEmail?token=${token}`,
         {
           method: "GET",
           headers: {

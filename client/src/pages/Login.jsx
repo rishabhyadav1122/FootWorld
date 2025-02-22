@@ -27,7 +27,7 @@ export const Login = () => {
     }
 
 
-    const URL = "http://localhost:5000/api/auth/login" 
+    const URL = "https://foot-world.vercel.app/api/auth/login" 
 
     const handleSubmit = async(e) => {
         e.preventDefault();

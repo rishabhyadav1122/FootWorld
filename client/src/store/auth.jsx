@@ -26,7 +26,7 @@ export const AuthProvider = ({children})=>{
     // JWT Authentication-to get current login data
     const userAuthentication = async() =>{
         try {
-            const response = await fetch("http://localhost:5000/api/auth/user",
+            const response = await fetch("https://foot-world.vercel.app/api/auth/user",
                 {
                     
                     method:"GET",
@@ -53,7 +53,7 @@ export const AuthProvider = ({children})=>{
     //to fetch all Products  data from backend
     const getProducts = async()=>{
         try {
-            const response = await fetch("http://localhost:5000/api/data/product" , {
+            const response = await fetch("https://foot-world.vercel.app/api/data/product" , {
                 method:"GET",
             })
 

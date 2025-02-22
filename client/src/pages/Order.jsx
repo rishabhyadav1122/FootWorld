@@ -13,7 +13,7 @@ export const Orders = () => {
 
     const fetchOrders = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/order/getAllOrder/${user._id}`);
+        const response = await fetch(`https://foot-world.vercel.app/api/order/getAllOrder/${user._id}`);
         const data = await response.json();
 
         if (response.ok) {

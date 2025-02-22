@@ -56,7 +56,7 @@ export const ProductPage = () => {
     // Fetch product details using API
     const fetchProduct = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/data/product/${id}`);
+        const response = await fetch(`https://foot-world.vercel.app/api/data/product/${id}`);
         const data = await response.json();
         console.log(data, "Hello")
         setProduct(data.product);

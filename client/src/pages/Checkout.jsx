@@ -23,7 +23,7 @@ export const Checkout = () => {
     const fetchAddresses = async () => {
       try {
         console.log(`Fetching addresses for user ID: ${user._id}`);
-        const response = await fetch(`http://localhost:5000/api/address/getAddress/${user._id}`);
+        const response = await fetch(`https://foot-world.vercel.app/api/address/getAddress/${user._id}`);
         const data = await response.json();
         const allAddress= data.addresses
         console.log("Fetched Address Data:", allAddress);
@@ -40,7 +40,7 @@ export const Checkout = () => {
 
     const fetchProduct = async () => {
       try {
-          const response = await fetch(`http://localhost:5000/api/data/product/${productId}`);
+          const response = await fetch(`https://foot-world.vercel.app/api/data/product/${productId}`);
           const data = await response.json();
           console.log(data.product.price)
           if (response.ok) {
@@ -73,7 +73,7 @@ export const Checkout = () => {
     }
   
     try {
-      const response = await fetch("http://localhost:5000/api/order/placeOrder", {
+      const response = await fetch("https://foot-world.vercel.app/api/order/placeOrder", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

@@ -26,7 +26,7 @@ export  const AddAddress = () => {
     if (!user) return toast("Please log in to add an address");
 
     try {
-      const response = await fetch(`http://localhost:5000/api/address/addAddress/${user._id}`, {
+      const response = await fetch(`https://foot-world.vercel.app/api/address/addAddress/${user._id}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
