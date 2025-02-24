@@ -50,7 +50,7 @@ const register = async(req,res) =>{
             auth: { user: process.env.EMAIL_USER, pass: process.env.EMAIL_PASS },
         });
 
-        const verificationUrl = `http://localhost:5173/verifyEmail?token=${token}`;
+        const verificationUrl = `https://foot-world-vozs-one.vercel.app/verifyEmail?token=${token}`;
 
          
         const app_name = "FootWorld"
