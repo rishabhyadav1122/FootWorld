@@ -20,7 +20,6 @@ import {Checkout} from "./pages/Checkout";
 import {Orders} from "./pages/Order";
 
 
-
 const PrivateRoute = ({ children }) => {
   const isLoggedIn = localStorage.getItem("token"); // Replace with your auth logic
   if (!isLoggedIn) {
