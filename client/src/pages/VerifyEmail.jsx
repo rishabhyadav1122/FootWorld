@@ -15,6 +15,7 @@ export const VerifyEmail = () => {
   }, [token]);
 
   const verifyEmailToken = async (token) => {
+    console.log("line-18")
     try {
       const response = await fetch(
         `https://foot-world.vercel.app/api/auth/verifyEmail?token=${token}`,
@@ -25,7 +26,7 @@ export const VerifyEmail = () => {
           },
         }
       );
-
+   console.log("line-29")
       if (!response.ok) {
         throw new Error("Verification failed");
       }
@@ -35,6 +36,7 @@ export const VerifyEmail = () => {
         toast.success("Email successfully verified! Redirecting to home page...");
         setTimeout(() => navigate("/login"), 3000);
       }
+      console.log("line-39")
     } catch (error) {
       toast.error(error.message);
       navigate("/register");
